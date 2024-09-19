@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <test name="Action and Parameter test" >-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <parameter name="env" value="dev"/>-->
+<!--            <classes>-->
+<!--                <class name="selenium.practice.ActionsTest"/>-->
+<!--            </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Group Execution">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="smoke"/>-->
+<!--&lt;!&ndash;                <exclude name="DO_NOT_RUN_ME"/>&ndash;&gt;-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="selenium.practice.ParameterizationTest"/>-->
+<!--            <class name="selenium.practice.GroupingTest"/>-->
+<!--            <class name="selenium.practice.ActionsTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Test 2">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="regression"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="selenium.practice.ParameterizationTest"/>-->
+<!--            <class name="selenium.practice.GroupingTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+        <test name="POM Test">
+            <classes>
+                <class name="demotest.LoginPageTest"/>
+                <class name="demotest.HomePageTest"/>
+            </classes>
+        </test>
+
+<!--    <test name="Parallel Execution" parallel="classes" thread-count="3">-->
+<!--        &lt;!&ndash;            <parameter name="browser" value="firefox"/>&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="demotest.LoginPageTest"/>-->
+<!--            <class name="demotest.HomePageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>
