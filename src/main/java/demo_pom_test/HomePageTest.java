@@ -1,4 +1,4 @@
-package demotest;
+package demo_pom_test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import practice.pom.HomePage;
 import practice.pom.LoginPage;
 
-public class LoginPageTest {
+public class HomePageTest {
 
     WebDriver driver;
 
@@ -18,16 +18,9 @@ public class LoginPageTest {
         driver.manage().window().maximize();
     }
 
-    @Test
-    public void loginTest(){
-        LoginPage login = new LoginPage(driver);
-        login.enterURL()
-                .fillLoginForm("test.account1@test.com","Welcome@123")
-                .clickSignInBtn();
-    }
 
     @Test
-    public void addToCart(){
+    public void addToCartTest(){
         LoginPage login = new LoginPage(driver);
         HomePage home = new HomePage(driver);
         login.enterURL()
@@ -38,10 +31,12 @@ public class LoginPageTest {
 
 
 
+
     @AfterMethod(alwaysRun = true)
     public void tearDown(){
         if(driver != null){
             driver.quit();
         }
     }
+
 }

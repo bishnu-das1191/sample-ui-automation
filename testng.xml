@@ -37,20 +37,46 @@
 <!--        </classes>-->
 <!--    </test>-->
 
-        <test name="POM Test">
-            <classes>
-                <class name="demotest.LoginPageTest"/>
-                <class name="demotest.HomePageTest"/>
-            </classes>
-        </test>
+<!--    This is for page object model tests execution-->
+<!--        <test name="POM Test">-->
+<!--            <classes>-->
+<!--                <class name="demo_pom_test.LoginPageTest"/>-->
+<!--                <class name="demo_pom_test.HomePageTest"/>-->
+<!--            </classes>-->
+<!--        </test>-->
 
-<!--    <test name="Parallel Execution" parallel="classes" thread-count="3">-->
-<!--        &lt;!&ndash;            <parameter name="browser" value="firefox"/>&ndash;&gt;-->
+<!--    This test suite is for parallel execution-->
+<!--    <test name="Parallel Execution" parallel="methods" thread-count="2">-->
+<!--        &lt;!&ndash;  <parameter name="browser" value="firefox"/>&ndash;&gt;-->
 <!--        <classes>-->
-<!--            <class name="demotest.LoginPageTest"/>-->
-<!--            <class name="demotest.HomePageTest"/>-->
+<!--            <class name="selenium.practice.ParallelExecutionTest"/>-->
 <!--        </classes>-->
 <!--    </test>-->
+
+
+    <!--    This test suite is used for Data Driven Testing-->
+<!--        <test name="Data Driver Testing">-->
+<!--            <classes>-->
+<!--                <class name="selenium.practice.DataProviderTest"/>-->
+<!--            </classes>-->
+<!--        </test>-->
+
+    <!--    This test suite is used for Data Driven Testing-->
+<!--    <test name="iFrame Automation Testing">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="selenium.practice.IFrameTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+    <!--    This test suite is used for Handing Multiple windows -->
+    <test name="Handling Multiple windows Testing">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="selenium.practice.WindowHandingTest"/>
+        </classes>
+    </test>
 
 
 </suite>
